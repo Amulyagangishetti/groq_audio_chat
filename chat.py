@@ -1,5 +1,7 @@
 from google.colab import files
 from groq import Groq
+import os
+os.environ["GROQ_API_KEY"]="your_api_key"
 client = Groq()
 def process_audio(file_path):
     with open(file_path, "rb") as file:
